@@ -25,18 +25,19 @@ $(document).ready(function() {
     });
 
     //MAP
-    $('#map').addClass('scrollOff');
 
-    $('#overlay').on("mouseup", function() {
-        $('#map').addClass('scrollOff');
-    });
-    $('#overlay').on("mousedown", function() {
-        $('#map').removeClass('scrollOff');
-    });
-    $("#map").mouseleave(function() {
+    if ($(window).width() > 950) {
         $('#map').addClass('scrollOff');
 
-    });
-
+        $('#overlay').on("mouseup", function() {
+            $('#map').addClass('scrollOff');
+        });
+        $('#overlay').on("mousedown", function() {
+            $('#map').removeClass('scrollOff');
+        });
+        $("#map").mouseleave(function() {
+            $('#map').addClass('scrollOff');
+        });
+    }
 
 });
