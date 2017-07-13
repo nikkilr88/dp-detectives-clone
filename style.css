@@ -237,6 +237,16 @@ textarea {
     transform: translateX(200px);
 }
 
+/*Google Map*/
+
+iframe {
+    width: 100%;
+}
+
+.scrollOff {
+    pointer-events: none;
+}
+
 /*Mobile Nav*/
 #mobileNav {
     position: fixed;
