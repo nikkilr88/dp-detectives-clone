@@ -1,0 +1,331 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #F6F4F3;
+    font-size: 16px;
+    font-family: "Raleway";
+    background: url("https://35697c48bsru38ben02wk1cr-wpengine.netdna-ssl.com/wp-content/uploads/2016/08/White_Polygon_Background_BIG_DarkEdges-min.jpg");
+    background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+    font-size:  1.17em;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.fa {
+    font-size: 20px;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    top: 0;
+    background: #2B4972;
+    height: 125px;
+    width: 100%;
+    padding: 0 100px;
+    z-index: 9999;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+#logo {
+    margin: 10px;
+    float: left;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+header ul {
+    float: right;
+    margin: 25px 0;
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+header ul li:hover {
+    background: #1B2F4A;
+    cursor: pointer;
+}
+
+.fa-bars {
+    position: relative;
+    left: 10px;
+    bottom: 25px;
+    display: none;
+}
+
+/*MAIN CONTENT*/
+
+#content {
+    overflow: auto;
+    height: 100%;
+    margin: 125px auto 0 auto;
+    max-width: 1024px;
+    background: rgba(43, 73, 114, 0.8);
+    width: 90%;
+    text-align: left;
+    transition: all 0.3s;
+}
+
+#magImg {
+    width: 100%;
+    max-height: 100%;
+    margin-bottom: -10px;
+}
+
+#sectionOne {
+    background: #8B443E;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#sectionOne h1 {
+    padding: 10px;
+    background: #1B2F4A;
+    border-radius: 45px 0 45px 0;
+    font-family: "Josefin Sans";
+}
+
+#photoSection {
+    overflow: auto;
+}
+
+#photoSection img {
+    float: left;
+    width: 32.5%;
+    margin: 0.41%;
+}
+
+#servicesSection {
+    width: 100%;
+    background: #253C5D;
+    overflow: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#servicesSection h2 {
+    background: #291518;
+    padding: 10px 0;
+}
+
+#servicesSection ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#servicesSection ul li {
+    padding: 10px 5px;
+    text-align: left;
+    width: 35%;
+    box-sizing: border-box;
+    float: left;
+    margin: 1% 7.5%;
+    background: #2B4972;
+    transition: background 0.3s linear;
+}
+
+#servicesSection ul li:hover {
+    background: #B4B0A9;
+}
+
+#servicesSection ul li:before {
+    content: "\f00c";
+    font-family: "FontAwesome", "Raleway";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: #B4B0A9;
+    margin: -6px 0 0 -50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#aboutSection {
+    box-sizing: border-box;
+    background: #8A433D;
+    width: 100%;
+    padding: 20px;
+}
+
+#aboutSection h2 {
+    background: #291518;
+    padding: 10px 0;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: #2B4972;
+    overflow: auto;
+    padding: 5px 15%;
+    box-sizing: border-box;
+}
+
+footer img {
+    display: block;
+}
+
+#footerLeft {
+    width: 50%;
+    line-height: 2;
+    float: left;
+}
+
+#footerRight {
+    width: 50%;
+    line-height: 2;
+    float: right;
+    text-align: center;
+}
+
+input[type="text"] {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #F6F4F3;
+    width: 75%;
+}
+
+input[type="submit"] {
+    background: none;
+    border: 1px solid #F6F4F3;
+    padding: 10px;
+    color: #F6F4F3;
+}
+
+textarea {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #F6F4F3;
+    width: 75%;
+}
+
+/*Nav Toggle Class*/
+.slide {
+    transform: translateX(200px);
+}
+
+/*Mobile Nav*/
+#mobileNav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 100vh;
+    width: 0;
+    background: #2b2b2b;
+    transition: all 0.3s;
+    overflow: hidden;
+    -ms-overflow-style: none;
+
+}
+
+#mobileNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#mobileNav ul li {
+    margin: 10px ;
+    text-align: center;
+}
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 950px) {
+    .fa-bars {
+        display: inline-block;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    header {
+        position: fixed;
+        padding: 0;
+        max-width: 100%;
+     
+        margin: 0 auto;
+    }
+    #logo {
+        float: none;
+        display: block;
+        margin: 10px auto;
+    }
+    header ul {
+        display: none;
+    }
+    #content {
+        width: 100%;
+    }
+    #photoSection {
+        text-align: center;
+    }
+    #photoSection img {
+        display: block;
+        float: none;
+        width: 95%;
+        margin: 5px auto;
+    }
+    #servicesSection ul {
+        overflow: auto;
+    }
+    #servicesSection ul li {
+        float: none;
+        width: 80%;
+        display: block;
+        position: relative;
+        left: 25px;
+        margin: 10px auto 10px auto;
+    }
+    footer {
+        padding: 10px;
+    }
+    footer img {
+        display: block;
+        margin: 0 auto;
+    }
+    #footerLeft {
+        width: 100%;
+        line-height: 2;
+        text-align: center;
+    }
+    #footerRight {
+        width: 100%;
+        line-height: 2;
+        text-align: center;
+    }
+}
