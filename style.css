@@ -278,6 +278,7 @@ input[type="tel"] {
     width: 75%;
     color: #F6F4F3;
     outline: none;
+    font-family: "Raleway";
 }
 
 input[type="submit"] {
@@ -295,6 +296,21 @@ textarea {
     width: 75%;
     color: #F6F4F3;
     outline: none;
+    font-family: "Raleway";
+    height: 75px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
 }
 
 
