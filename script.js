@@ -29,6 +29,7 @@ $('#logo').on("click", function(){
 // MOBILE NAV
 $('.fa-bars').on("click", function(){
     $("#content, header").toggleClass('slide');
-    console.log($('#mobileNav').css("width"))
     $('#mobileNav').css("width") === "0px" ? $('#mobileNav').css("width","200px") : $('#mobileNav').css("width", "0px");
+   console.log( $('html, body').css("overflow"));
+   $('html, body').css("overflow") === "visible" ? $('html, body').css("overflow", "hidden") : $('html, body').css("overflow", "visible");
 });
