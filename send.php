@@ -1,12 +1,13 @@
 <?php
 
-$to = "nikki.lyn.rivera@gmail.com";
-$from = "noreply@notify.com";
+$to = "marco_afp@yahoo.com.mx";
+$from = "noreply@dpdetectivesprofesionales.com";
 $name = $_POST['name'];
+$tel = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$retval = mail ($to, $name."e-mail: ".$email, $message, 'From:'.$from);
+$retval = mail ($to, $name.": ".$email, "Mensaje: ".$message."\n"."Tel:".$tel, 'From:'.$from);
 
 if($retval == true) {
     echo 'Mensaje enviado con éxito <br /> <a href="index.html">Volver</a>';
