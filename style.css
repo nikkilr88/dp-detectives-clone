@@ -62,10 +62,12 @@ p {
     text-align: center;
 }
 
-#mobileNav a, header a {
+#mobileNav a,
+header a {
     color: #F6F4F3;
     text-decoration: none;
 }
+
 
 /*HEADER*/
 
@@ -217,24 +219,18 @@ header ul li:hover {
     padding: 10px 0;
 }
 
-#bottomBanner {
+
+/*BANNERS*/
+
+#bottomBanner,
+#topBanner {
     padding: 75px 20px;
     box-sizing: border-box;
     background: none;
     transition: transform 0.3s linear;
 }
 
-#bottomBanner:hover {
-    transform: translateY(-15px);
-}
-
-#bottomBanner h1 {
-    position: relative;
-    margin-top: -50px;
-    line-height: 1.2;
-}
-
-#bannerContain {
+#topBanner #bannerContain {
     height: 0;
     border-top: 100px solid #223A5B;
     border-right: 50px solid transparent;
@@ -242,6 +238,31 @@ header ul li:hover {
     border-bottom: 100px solid #223A5B;
 }
 
+#topBanner h1 {
+    position: relative;
+    margin-top: -75px;
+    line-height: 1.2;
+    padding: 7% 0;
+}
+
+#bottomBanner #bannerContain {
+    height: 0;
+    border-top: 100px solid #223A5B;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-bottom: 100px solid #223A5B;
+}
+
+#bottomBanner h1 {
+    position: relative;
+    margin-top: -100px;
+    line-height: 1.2;
+    padding: 7% 0;
+}
+
+#bottomBanner:hover, #topBanner:hover {
+    transform: translateY(-15px);
+}
 
 /*FOOTER*/
 
@@ -300,17 +321,24 @@ textarea {
     height: 75px;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #ccc;
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ccc;
 }
-::-moz-placeholder { /* Firefox 19+ */
-  color: #ccc;
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #ccc;
 }
-:-ms-input-placeholder { /* IE 10+ */
-  color: #ccc;
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #ccc;
 }
-:-moz-placeholder { /* Firefox 18- */
-  color: #ccc;
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #ccc;
 }
 
 
