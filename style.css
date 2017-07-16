@@ -240,10 +240,19 @@ header ul li:hover {
 
 #topBanner h1 {
     position: relative;
-    margin-top: -75px;
+    margin-top: -100px;
+    height: 200px;
     line-height: 1.2;
-    padding: 7% 0;
     text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 #sectionOne h1 {
@@ -252,23 +261,33 @@ header ul li:hover {
 
 #bottomBanner #bannerContain {
     height: 0;
-    border-top: 120px solid #223A5B;
+    border-top: 110px solid #223A5B;
     border-right: 50px solid transparent;
     border-left: 50px solid transparent;
-    border-bottom: 120px solid #223A5B;
+    border-bottom: 110px solid #223A5B;
 }
 
 #bottomBanner h1 {
     position: relative;
+    height: 220px;
     margin-top: -110px;
-    line-height: 1.2;
-    padding: 7% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     text-transform: uppercase;
 }
 
-#bottomBanner:hover, #topBanner:hover {
+#bottomBanner:hover,
+#topBanner:hover {
     transform: translateY(-15px);
 }
+
 
 /*FOOTER*/
 
