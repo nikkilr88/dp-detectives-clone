@@ -243,21 +243,27 @@ header ul li:hover {
     margin-top: -75px;
     line-height: 1.2;
     padding: 7% 0;
+    text-transform: uppercase;
+}
+
+#sectionOne h1 {
+    text-transform: uppercase;
 }
 
 #bottomBanner #bannerContain {
     height: 0;
-    border-top: 100px solid #223A5B;
+    border-top: 120px solid #223A5B;
     border-right: 50px solid transparent;
     border-left: 50px solid transparent;
-    border-bottom: 100px solid #223A5B;
+    border-bottom: 120px solid #223A5B;
 }
 
 #bottomBanner h1 {
     position: relative;
-    margin-top: -100px;
+    margin-top: -110px;
     line-height: 1.2;
     padding: 7% 0;
+    text-transform: uppercase;
 }
 
 #bottomBanner:hover, #topBanner:hover {
